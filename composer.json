@@ -1,0 +1,26 @@
+{
+  "name": "nachach/trip-sorter-boarding-pass",
+  "description": "This trip sorter will help you to sort all your boarding pass",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nizar ACHACH",
+      "email": "achach.nizar@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nachach\\TripSorter\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php tests",
+    "execute": "php index.php"
+  }
+}
