@@ -11,10 +11,10 @@ use Nachach\TripSorter\Manager\TripManager;
 
 // list of all boarding passes
 $trip = new TripManager();
-$trip->addBoardingPass(new BusBoardingPass('Paris', 'Lyon', '007'));
-$trip->addBoardingPass(new PlaneBoardingPass('Lyon', 'Marseille', 'FK3132', 'B22', '3', '12'));
-$trip->addBoardingPass(new TrainBoardingPass('Marseille', 'Toulon', '3132'));
-$trip->addBoardingPass(new BusBoardingPass('Toulon', 'Port', 'Airport'));
+$trip->addBoardingPass(new PlaneBoardingPass('Gerona', 'Stockholm', 'SK455', '3A', '45B', '344'));
+$trip->addBoardingPass(new BusBoardingPass('Barcelona', 'Gerona', 'Airport'));
+$trip->addBoardingPass(new PlaneBoardingPass('Stockholm', 'New York JFK', 'SK22', '7B', '22'));
+$trip->addBoardingPass(new TrainBoardingPass('Madrid', 'Barcelona', '78A', '45B'));
 
 $trip->sortBoardingPasses();
 
